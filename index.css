@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: block;
+}
+header{
+    position: relative;
+    background: #fff;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    font-size: 1em;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);   
+}
+
+
+#logo{
+    margin-left: 20px;
+}
+header ul{
+    display: flex;
+    padding: 15px;
+    list-style: none;
+    box-sizing: inherit;
+
+}
+
+header li{
+    padding: 0px 5px;
+}
+
+header li input{
+    height: 40px;
+    width: 200px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid gray;
+    outline: none;
+    padding-left: 40px;
+}
+
+header li button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    outline: none;
+    border: 1.5px solid gray;
+    display: inline-block;
+    background: #fff;
+    justify-content: center;
+    padding-top: 2px;
+}
+
+header ul li img {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    align-items: center;
+    display: inline-block;
+    z-index: 0;
+}
+
+
+.navbar{
+    position: relative;
+    background: #fff;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100vh;
+    max-height: calc(100vh - 72px);
+    z-index: 1;
+    box-shadow: 0 10px 10px rgb(0 0 0 / 10%);   
+}
+
+
+
+.navbar .user{
+    position: absolute;
+    width: calc(100% - 30px );
+    min-height: 180px;
+    background: url('images/blur-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px 15px 0 15px;
+}
+
+.user p{
+    padding-top: 30px;
+    font-size: 0.9em;
+    color: #fff;
+}
+
+.user h1{
+    color: #fff;
+}
+
+.user span{
+    float: right;
+    color: #fff;
+}
