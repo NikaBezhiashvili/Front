@@ -1,7 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
+
+
+/* Keyframe ები */
+
+@keyframes navbar_hover{
+    0%{
+
+    }
+    100%{
+        background: rgb(0 0 0 / 10%);
+    }
+}
+
+
+@keyframes navbar_info{
+    0%{
+        display: none;
+    }
+    100%{
+        display: flex;
+        width : 600px;
+    }
+}
+
+
+@keyframes navbar_info_close{
+    0%{
+        width: 600px;
+    }
+    100%{
+        width: 0px;
+    }
+}
+/* Keyframe ები */
 
 body{
     display: block;
@@ -71,21 +108,20 @@ header ul li img {
 
 
 .navbar{
-    position: relative;
+    position: absolute;
     background: #fff;
-    top: 0;
+    top: 72px;
     left: 0;
     width: 300px;
     height: 100vh;
-    max-height: calc(100vh - 72px);
     z-index: 1;
-    box-shadow: 0 10px 10px rgb(0 0 0 / 10%);   
+    box-shadow: 0 10px 10px rgb(0 0 0 / 10%);  
 }
 
 
 
 .navbar .user{
-    position: absolute;
+    position: relative;
     width: calc(100% - 30px );
     min-height: 180px;
     background: url('images/blur-background.png');
@@ -108,4 +144,44 @@ header ul li img {
 .user span{
     float: right;
     color: #fff;
+}
+
+.navbar ul{
+    position: relative;
+    list-style: none;
+    flex-direction: column;
+
+}
+
+.navbar ul li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    float: left;
+    padding: 15px 0px 15px 0px;
+    width: 100%;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(0 0 0 / 10%);
+}
+
+.navbar ul li img{
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+    padding-left: 15px;
+}
+
+
+.navbar ul li:hover{
+    animation: navbar_hover 0.3s forwards;
+}
+
+
+#coretest{
+    position: absolute;
+    background: rgb( 240 243 246);
+    left: 300px;
+    top: 72px;
+    height: 100vh;
+    width: 0px;
 }
